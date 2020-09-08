@@ -25,9 +25,11 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
 
-      - name: Staging
-      - run: mkdir staging && cp target/*.jar staging
-      - uses: actions/upload-artifact@v2
+      - name: Copy jar file to Staging
+        run: mkdir staging && cp target/*.jar staging
+        
+      - name: Upload
+        uses: actions/upload-artifact@v2
         with:
           name: Package
           path: staging
