@@ -30,6 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - uses: actions/checkout@v2
       - run: mkdir staging && cp target/*.jar staging
 
       - uses: actions/upload-artifact@v2
