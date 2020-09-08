@@ -25,3 +25,15 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
 
+  package:
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
+      - run: mkdir staging && cp target/*.jar staging
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Package
+          path: staging
+          
