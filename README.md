@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/batspike/ci-cd-process-maven.svg?style=svg)](https://circleci.com/gh/batspike/ci-cd-process-maven)
+![Java CI](https://github.com/batspike/ci-cd-process-maven/workflows/Java%20CI/badge.svg)
 [![codecov](https://codecov.io/github/batspike/ci-cd-process-maven/coverage.svg?branch=master)](https://codecov.io/github/batspike/ci-cd-process-maven?branch=master)
 
 # ci-cd-process-maven
