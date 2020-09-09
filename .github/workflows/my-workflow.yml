@@ -45,17 +45,11 @@ jobs:
       uses: actions/checkout@v1
       
     - name: Download built artifact
-      uses: actions/download-artifact@master
+      uses: actions/download-artifact@v2
       with:
         name: Package
         path: staging
         
-    - name: Build container image
-      uses: docker/build-push-action@v1
-      with:
-        username: ${{github.actor}}
-        password: ${{secrets.GITHUB_TOKEN}}
-        registry: docker.pkg.github.com
-        repository: batspike/ci-cd-process-maven/cicd-process-docker
-        tag_with_sha: false
+    - name: Display downloaded files
+      run: ls -R
        
