@@ -53,3 +53,12 @@ jobs:
     - name: Display downloaded files
       run: ls -R
        
+    - name: Build container image
+      uses: docker/build-push-action@v1
+      with:
+        username: ${{github.actor}}
+        password: ${{secrets.GITHUB_TOKEN}}
+        registry: docker.pkg.github.com
+        repository: batspike/ci-cd-process-maven/cicd-process-docker
+        tag_with_sha: false
+       
