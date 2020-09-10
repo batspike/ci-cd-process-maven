@@ -68,5 +68,5 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: $GITHUB_REPOSITORY
+        tags: ${{ github.repository }}
        
