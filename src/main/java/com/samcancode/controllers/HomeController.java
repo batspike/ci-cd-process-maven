@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
 	@GetMapping("/")
 	public String home(Model model) {
+		System.out.println("Celebrate if you see this !!");
 		model.addAttribute("result", "Super Success!");
 		return "index";
 	}
