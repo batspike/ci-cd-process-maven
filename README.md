@@ -9,4 +9,3 @@ Technology used:
 2. CircleCI
 3. CodeCov
 4. DockerHub
- 
