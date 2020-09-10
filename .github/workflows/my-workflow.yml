@@ -68,5 +68,5 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: batspike/cicd-process
+        tags: env.GITHUB_REPOSITORY
        
