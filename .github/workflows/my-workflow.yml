@@ -51,7 +51,7 @@ jobs:
         path: staging
         
     - name: Display downloaded files
-      run: echo ${{env.GITHUB_REPOSITORY}}
+      run: echo $GITHUB_REPOSITORY
       
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v1
