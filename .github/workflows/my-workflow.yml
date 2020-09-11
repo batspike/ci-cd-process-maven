@@ -41,7 +41,7 @@ jobs:
 
   Build-and-Push-Docker-Image:
     runs-on: ubuntu-latest
-    needs: build_and_stage
+    needs: Build_and_Stage_App
     name: Docker Build, Tag, Push
 
     steps:
