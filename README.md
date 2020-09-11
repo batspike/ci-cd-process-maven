@@ -6,6 +6,6 @@ A Spring Boot project to demonstrate CI/CD process with Dockerizing of the appli
 
 Technology used:
 1. Spring Boot
-2. CircleCI
+2. GitHub Action & Workflow
 3. CodeCov
 4. DockerHub
