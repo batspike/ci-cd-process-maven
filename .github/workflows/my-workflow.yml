@@ -35,7 +35,15 @@ jobs:
           name: Package
           path: staging
           
-       
+  Code_Coverage:
+    runs-on: ubuntu-latest
+    needs: build_and_stage
+    name: Code Coverage Report
+    
+    steps:
+      - name: Send to CodeCov
+        run: bash <(curl -s https://codecov.io/bash)
+
   Build-and-Push-Docker-Image:
     runs-on: ubuntu-latest
     needs: build_and_stage
