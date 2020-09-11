@@ -1,4 +1,4 @@
-![Java CI](https://github.com/batspike/ci-cd-process-maven/workflows/Java%20CI/badge.svg)
+![Java CI](https://github.com/batspike/ci-cd-process-maven/workflows/Java%20CI/badge.svg?branch=master)
 [![codecov](https://codecov.io/github/batspike/ci-cd-process-maven/coverage.svg?branch=master)](https://codecov.io/github/batspike/ci-cd-process-maven?branch=master)
 
 # ci-cd-process-maven
