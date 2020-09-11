@@ -9,5 +9,10 @@ class CiCdProcessMavenApplicationTests {
 	@Test
 	void contextLoads() {
 	}
+	
+	@Test
+	void applicationContextTest() {
+		CiCdProcessMavenApplication.main(new String[] {});
+	}
 
 }
