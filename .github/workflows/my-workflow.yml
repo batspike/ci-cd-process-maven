@@ -1,6 +1,8 @@
 name: Java CI
 
-on: [push]
+on: 
+  push:
+    branches: [master]
 # on: pull_request_review
 
 jobs:
