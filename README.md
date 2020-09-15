@@ -9,8 +9,16 @@ This workflow will compile, test, and package the codes using maven build system
 and test, maven will package the app into a executable jar. This is then build into a Docker Image and publish
 in DockerHub as batspike/ci-cd-process-maven.
 
-To run the docker image,
-    docker run -dp 8080:8080 batspike/ci-cd-process-maven:latest
+To run the docker image,<br>
+    <p>docker run -dp 8080:8080 batspike/ci-cd-process-maven:latest</p>
+
+<br>
+<p>
+Another workflow, env-variable-workflow.yml is created to demonstrate how to use GitHub API to start the
+workflow remotely. The workflow is triggered on workflow_dispatch event which is initiated via a http
+POST call to GitHub API,<br>
+https://api.github.com/repos/batspike/ci-cd-process-maven/actions/workflows/env-variable-workflow.yml/dispatches
+</p>
 
 Technology used:
 1. Spring Boot
